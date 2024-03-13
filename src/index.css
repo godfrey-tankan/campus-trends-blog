@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .line-counter-container {
+    @apply flex bg-black py-6 rounded-md;
+  }
+  
+  .line-numbers {
+    @apply flex flex-col items-end pl-6 pr-1 border-r;
+    color: #c7c7c7;
+  }
+  
+  .line-number {
+    @apply m-0;
+  }
+  
+  .text-input {
+    @apply  resize-none bg-black  focus:outline-none text-gray-200 ml-1 font-bold
+  }
+  .gradient-button {
+  @apply mt-8 w-full  bg-gradient-to-r rounded-full from-[#c373fc] to-[#6653cf] py-4 px-4 border-none text-gray-200 text-base cursor-pointer hover:opacity-90 text-lg disabled:bg-gradient-to-bl disabled:from-[#1c1c1c] disabled:to-[#1c1c1c] disabled:text-gray-500
+  }
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+  margin: 0;
+  font-family: Poppins;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #2d2d2d;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
