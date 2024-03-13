@@ -8,10 +8,10 @@ type User = {
   enum UserRole {
     ADMIN = "admin",
     MODERATOR = "moderator",
+    CLIENT = "client",
     USER = "user",
   }
   
-  // Login function
   function login(email: string, password: string): User | null {
     const name = "";
     const user: User = {
@@ -24,14 +24,12 @@ type User = {
     return user;
   }
   
-  // Example usage
   const email = '';
   const password = '';
   
   const loggedInUser = login(email, password);
   
   if (loggedInUser) {
-    // Access user properties
     console.log("User ID:", loggedInUser.id);
     console.log("User Name:", loggedInUser.name);
     console.log("User Email:", loggedInUser.email);
